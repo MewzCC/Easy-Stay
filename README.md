@@ -30,9 +30,13 @@ EasyStay 是一个基于Spring Boot的视频分享平台，支持用户上传、
 
 1. 克隆项目到本地 `git clone https://github.com/yourusername/easylive-server.git`
 2. 构建项目   `mvn clean install`
-3. 启动服务
+3. 启动Elasticsearch
+4. 修改配置文件关键配置
+5. 启动服务
 `mvn spring-boot:run -pl easystay-web`
 `mvn spring-boot:run -pl easystay-admin`
+
+
 ### 数据库初始化
 
 1. 导入数据库脚本

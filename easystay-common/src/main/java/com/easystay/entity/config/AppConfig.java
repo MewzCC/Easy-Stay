@@ -9,10 +9,10 @@ public class AppConfig {
     @Value("${project.folder:}")
     private String projectFolder;
 
-    @Value("${admin.account:admin}")
+    @Value("${admin.account:}")
     private String adminAccount;
 
-    @Value("${admin.password:admin123456}")
+    @Value("${admin.password:}")
     private String adminPassword;
 
     @Value("${showFFmegLog:true}")

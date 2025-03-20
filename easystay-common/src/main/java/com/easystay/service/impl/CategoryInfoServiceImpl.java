@@ -181,7 +181,8 @@ public class CategoryInfoServiceImpl implements CategoryInfoService {
     @Override
     public void saveCategoryInfo(CategoryInfo bean) {
         CategoryInfo dbBean = this.categoryInfoMapper.selectByCategoryCode(bean.getCategoryCode());
-        if (bean.getCategoryId() == null && dbBean != null || bean.getCategoryId() != null && dbBean != null && !bean.getCategoryId().equals(dbBean.getCategoryId())) {
+        if (bean.getCategoryId() == null && dbBean != null || bean.getCategoryId() != null
+                && dbBean != null && !bean.getCategoryId().equals(dbBean.getCategoryId())) {
             throw new BusinessException("分类编号已经存在");
         }
         if (bean.getCategoryId() == null) {

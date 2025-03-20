@@ -11,8 +11,8 @@ public class SysSettingDto implements Serializable {
     private Integer videoSize = 5000;
     private Integer videoPCount = 10;
     private Integer videoCount = 10;
-    private Integer commentCount = 20;
-    private Integer danmuCount = 20;
+    private Integer commentCount = 200;
+    private Integer danmuCount = 200;
 
     public Integer getVideoSize() {
         return videoSize;
